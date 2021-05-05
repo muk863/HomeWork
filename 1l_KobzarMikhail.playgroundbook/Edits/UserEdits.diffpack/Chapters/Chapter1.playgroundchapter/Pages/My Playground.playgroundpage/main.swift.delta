@@ -41,10 +41,10 @@ print("Катет В равен:  \(catB)")
 var gip: Double = sqrt(pow(catA, 2) + pow(catB,2))
 print("Гипотенуза равна:  \(gip)")
 
-var p = a + b + c
+var p = catA + catB + gip
 print("Периметр равен:  \(p)")
 
-var s = 0.5 * a * b
+var s = 0.5 * catA * catB
 print("Площадь равна:  \(s)")
 
 //3. * Пользователь вводит сумму вклада в банк и годовой процент. Найти сумму вклада через 5 лет.
@@ -68,7 +68,7 @@ var result5 = (result4 * interest / 100) + result4
 print ("Накопления за 5 лет: \(result5)")
 </string>
 			<key>ModifiedRange</key>
-			<string>{0, 1497}</string>
+			<string>{0, 1511}</string>
 			<key>OriginalContent</key>
 			<string>
 </string>
