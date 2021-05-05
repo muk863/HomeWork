@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+// 1. Решить квадратное уравнение.
+
+//a!=0
+//a*x^2+b*x+c=0
+//d=pov(b,2)-4*a*c
+//x= (-b(+-)sqrt(d))/2*a
+
+var a: Double = 2
+var b: Double = 7
+var c: Double = -4
+var d = pow(b, 2) - 4 * a * c
+if d &gt; 0 {
+    var dis = sqrt(d)
+    var xOne = (-b - dis) / (2 * a)
+    var xTwo = (-b + dis) / (2 * a)
+    print(xOne)
+    print(xTwo)
+} else if d == 0 {
+    var x = -b / (2 * a)
+    print (x)
+} else {
+    print ("Уравнение решений не имеет")
+}
+
+//2. Даны катеты прямоугольного треугольника. Найти площадь, периметр и гипотенузу треугольника.
+var catA: Double = 3
+var catB: Double = 4
+
+print("Катет А равен:  \(catA)")
+print("Катет В равен:  \(catB)")
+
+var gip: Double = sqrt(pow(catA, 2) + pow(catB,2))
+print("Гипотенуза равна:  \(gip)")
+
+var p = a + b + c
+print("Периметр равен:  \(p)")
+
+var s = 0.5 * a * b
+print("Площадь равна:  \(s)")
+
+//3. * Пользователь вводит сумму вклада в банк и годовой процент. Найти сумму вклада через 5 лет.
+
+var deposit: Double = 1000000 // вклад
+var interest: Double = 5 //проценты
+
+var result1 = (deposit * interest / 100) + deposit
+print ("Накопления за 1 год: \(result1)")
+
+var result2 = (result1 * interest / 100) + result1
+print ("Накопления за 2 года: \(result2)")
+
+var result3 = (result2 * interest / 100) + result2
+print ("Накопления за 3 года: \(result3)")
+
+var result4 = (result3 * interest / 100) + result3
+print ("Накопления за 4 года: \(result4)")
+
+var result5 = (result4 * interest / 100) + result4
+print ("Накопления за 5 лет: \(result5)")
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1497}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
